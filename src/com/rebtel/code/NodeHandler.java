@@ -1,5 +1,6 @@
 package com.rebtel.code;
 
+import junit.framework.TestSuite;
 import com.rebtel.test.TestRebtelAndroid;
 
 public class NodeHandler {
@@ -12,15 +13,15 @@ public class NodeHandler {
 		// ToDo:
 	}
 	
-	public Class getSuite(String suiteCase) {
+	public TestSuite getSuite(String suiteCase) {
 		if (suiteCase == "TestRebtelAndroid") {
-			return TestRebtelAndroid.class;
+			return new TestSuite(TestRebtelAndroid.class);
 		}
 		else if (suiteCase == "TestRebteliOS") {
-			// return TestRebteliOS.class;
+			// return new TestSuite(TestRebteliOS.class);
 		}
 		
-		return TestRebtelAndroid.class;
+		return new TestSuite(TestRebtelAndroid.class);
 	}
 	
 	public void runTest() {
