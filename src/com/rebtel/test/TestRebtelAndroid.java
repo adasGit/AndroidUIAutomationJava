@@ -7,8 +7,7 @@ import com.rebtel.code.Device;
 public class TestRebtelAndroid extends TestCase {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		Device d = new Device();
-		Device device = d.getDevice("TestRebtelAndroid");
+		
 	}
 	
 	@AfterClass
@@ -28,7 +27,8 @@ public class TestRebtelAndroid extends TestCase {
 	
 	@Test
 	public void testRecentMenu() {
-		
+		Device device = Device.device.get("TestRebtelAndroid");
+		System.out.print("info: "+device.getPlatformName());
 	}
 	
 }
