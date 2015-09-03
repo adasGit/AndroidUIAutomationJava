@@ -3,5 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/avd.VIZRTINT/workspace/JUnit4RebtelAndroidTest/selenium-server-standalone-2.47.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/avd.VIZRTINT/workspace/JUnit4RebtelAndroidTest/java-client-2.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

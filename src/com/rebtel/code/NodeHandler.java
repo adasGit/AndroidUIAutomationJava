@@ -57,7 +57,8 @@ public class NodeHandler extends Device{
 	
 	
 	public void runTest() {
-		junit.textui.TestRunner.run(this.getSuite("TestRebtelAndroid"));
+		String suite = this.root.getAttribute("suite");
+		junit.textui.TestRunner.run(this.getSuite(suite));
 	}
 	
 	
