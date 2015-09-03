@@ -12,6 +12,7 @@ public class NodeHandler extends Device{
 	
 	private Element root;
 	
+	
 	public NodeHandler(String configFile) {
 		try {
 			File inputFile = new File(configFile);
