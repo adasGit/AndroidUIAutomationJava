@@ -46,10 +46,10 @@ public class NodeHandler extends Device{
 	
 	
 	public TestSuite getSuite(String suiteCase) {
-		if (suiteCase == "TestRebtelAndroid") {
+		if (suiteCase.equals("TestRebtelAndroid")) {
 			return new TestSuite(TestRebtelAndroid.class);
 		}
-		else if (suiteCase == "TestRebteliOS") {
+		else if (suiteCase.equals("TestRebteliOS")) {
 			// return new TestSuite(TestRebteliOS.class);
 		}
 		
